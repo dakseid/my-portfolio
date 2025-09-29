@@ -1,7 +1,9 @@
 
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ThemeProvider } from './contexts/ThemeContext';
 import Navbar from './components/Navbar';
+import Footer from './components/layout/Footer';
 import LoadingScreen from './components/LoadingScreen';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
@@ -26,8 +28,9 @@ function App() {
   }
 
   return (
-    <Router>
-      <div className="min-h-screen bg-gray-50">
+    <ThemeProvider>
+      <Router>
+        <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
         <Navbar />
         <main>
           <Routes>
@@ -37,8 +40,10 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
-      </div>
-    </Router>
+        <Footer />
+        </div>
+      </Router>
+    </ThemeProvider>
   );
 }
 

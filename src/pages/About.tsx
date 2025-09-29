@@ -22,14 +22,14 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="https://via.placeholder.com/400x500"
+                src="https://i.pinimg.com/1200x/88/f9/dc/88f9dca2ca054cecfd6365462b8cd629.jpg"
                 alt="Profile"
                 className="w-full rounded-lg shadow-lg"
               />
             </div>
             
             <div>
-              <h2 className="text-3xl font-bold mb-6">Hi, I'm [Your Name]</h2>
+              <h2 className="text-3xl font-bold mb-6">Hi, I'm David</h2>
               <p className="text-gray-600 mb-6">
                 I'm a passionate full-stack developer with over 3 years of experience
                 creating web applications and digital solutions. I love turning complex

@@ -1,14 +1,25 @@
-﻿@tailwind base;
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark theme styles */
+.dark {
+  color-scheme: dark;
+}
+
+.dark body {
+  background-color: #111827;
+  color: #f9fafb;
 }
 
 .btn-primary {
@@ -90,4 +101,49 @@ body {
   max-height: 0;
   opacity: 0;
   transition: max-height 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+
+/* Theme Configurations */
+:root {
+  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+/* Hero Background Images - Tech/Professional Aesthetic */
+.hero-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background-image 0.3s ease-in-out;
+}
+
+/* Light theme background - Clean tech workspace */
+.light .hero-background {
+  background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+}
+
+/* Dark theme background - Night coding setup */
+.dark .hero-background {
+  background-image: url('https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+}
+
+/* Glassmorphism effect for cards */
+.glass-card {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Light theme glass cards */
+.light .glass-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Dark theme glass cards */
+.dark .glass-card {
+  background: rgba(31, 41, 55, 0.8);
+  border: 1px solid rgba(156, 163, 175, 0.2);
 }

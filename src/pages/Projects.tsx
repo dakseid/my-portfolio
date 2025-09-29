@@ -6,7 +6,7 @@ const Projects = () => {
       title: "E-commerce Platform",
       description: "A full-stack e-commerce solution with React, Node.js, and MongoDB.",
       tech: ["React", "Node.js", "MongoDB", "Stripe"],
-      image: "https://via.placeholder.com/400x300",
+      image: "https://i.pinimg.com/736x/c6/0c/0c/c60c0c960a41d79213ba0460726b90a5.jpg",
       github: "#",
       demo: "#"
     },
@@ -14,7 +14,7 @@ const Projects = () => {
       title: "Task Management App",
       description: "A collaborative task management tool with real-time updates.",
       tech: ["React", "Firebase", "Tailwind CSS"],
-      image: "https://via.placeholder.com/400x300",
+      image: "https://i.pinimg.com/1200x/29/55/60/2955605cbece2fdf0797fa5ba0e1a0d2.jpg",
       github: "#",
       demo: "#"
     },
@@ -22,7 +22,7 @@ const Projects = () => {
       title: "Weather Dashboard",
       description: "A responsive weather application with location-based forecasts.",
       tech: ["JavaScript", "API Integration", "CSS3"],
-      image: "https://via.placeholder.com/400x300",
+      image: "https://i.pinimg.com/1200x/9d/09/c7/9d09c73ec5decc01aa987de7d053fef4.jpg",
       github: "#",
       demo: "#"
     }
